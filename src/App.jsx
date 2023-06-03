@@ -1,12 +1,10 @@
 import './App.css';
-import { CleanUpFunction } from './tutorial/02-useEffect/04-useEffect-CleanUp-function';
-
-import { UserChallenge } from './tutorial/challenge/UserChallenge';
+import { Example } from './tutorial/03-folderStructure/Example';
 
 function App() {
   return (
     <>
-      <CleanUpFunction />
+      <Example />
     </>
   );
 }
