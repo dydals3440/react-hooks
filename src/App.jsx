@@ -1,11 +1,12 @@
 import './App.css';
+import { CleanUpFunction } from './tutorial/02-useEffect/04-useEffect-CleanUp-function';
 
-import { ToggleChallenge } from './tutorial/challenge/ToggleChallenge';
+import { UserChallenge } from './tutorial/challenge/UserChallenge';
 
 function App() {
   return (
     <>
-      <ToggleChallenge />
+      <CleanUpFunction />
     </>
   );
 }
