@@ -1,10 +1,10 @@
 import './App.css';
-import { Example } from './tutorial/03-folderStructure/Example';
+import { MultipleInputs } from './tutorial/05-controlled-inputs.jsx/02-multiple-inputs';
 
 function App() {
   return (
     <>
-      <Example />
+      <MultipleInputs />
     </>
   );
 }
