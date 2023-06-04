@@ -37,7 +37,7 @@ export const ControlledInputs = () => {
             onChange={(e) => setName(e.target.value)}
           />
         </div>
-        <button type='submit' className='btn btn-block'>
+        <button type='submit' className='btn btn-block' onClick={handleSubmit}>
           제출하기
         </button>
       </form>
