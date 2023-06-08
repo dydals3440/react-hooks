@@ -1,10 +1,10 @@
 import './App.css';
-import { UncontrolledInputs } from './tutorial/05-controlled-inputs.jsx/04-FormData';
+import { UseRefBasics } from './tutorial/06-useRef2/UseRefBasics';
 
 function App() {
   return (
     <>
-      <UncontrolledInputs />
+      <UseRefBasics />
     </>
   );
 }

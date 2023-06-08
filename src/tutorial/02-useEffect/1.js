@@ -24,7 +24,7 @@ if (z) {
 const f = 0;
 const g = 1;
 
-console.log(f && g); // 0
-console.log(g && f); // 0
-console.log(f || g); // 1
-console.log(g || f);
+console.log(f && g); // 0 // 첫번째가 거짓, 그래서 0이 리턴
+console.log(g && f); // 0 //  두번쨰가 거짓 그래서 0이 리턴
+console.log(f || g); // 1 (첫번쨰가 거짓, 두번째가 리턴됨)
+console.log(g || f); // 1 (첫번쨰가 참, 그래서 첫번째가 리턴)
