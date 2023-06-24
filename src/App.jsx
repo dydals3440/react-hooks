@@ -1,10 +1,10 @@
 import './App.css';
-import { UseRefBasics } from './tutorial/06-useRef2/UseRefBasics';
+import { ToggleChallenge } from './tutorial/challenge/ToggleChallenge';
 
 function App() {
   return (
     <>
-      <UseRefBasics />
+      <ToggleChallenge />
     </>
   );
 }
