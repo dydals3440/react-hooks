@@ -1,10 +1,10 @@
 import './App.css';
-import { ToggleChallenge } from './tutorial/challenge/ToggleChallenge';
+import FetchData from './tutorial/challenge/FetchData';
 
 function App() {
   return (
     <>
-      <ToggleChallenge />
+      <FetchData />
     </>
   );
 }
