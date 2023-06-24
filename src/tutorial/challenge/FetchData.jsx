@@ -1,31 +1,9 @@
-import { useEffect, useState } from 'react';
+import useFetchPerson from './useFetchPerson';
 
 const url = 'https://api.github.com/users/QuincyLarson';
 
 export default function FetchData() {
-  const [isLoading, setIsLoading] = useState(true);
-  const [isError, setIsError] = useState(false);
-  const [user, setUser] = useState(null);
-
-  useEffect(() => {
-    const fetchUser = async () => {
-      try {
-        const res = await fetch(url);
-        if (!res.ok) {
-          setIsError(true);
-          setIsLoading(false);
-          return;
-        }
-        const user = await res.json();
-        setUser(user);
-      } catch (error) {
-        setIsError(true);
-      }
-      setIsLoading(false);
-    };
-
-    fetchUser();
-  }, []);
+  const { isLoading, isError, user } = useFetchPerson(url);
 
   if (isLoading) {
     return <div>Loading...</div>;
@@ -34,13 +12,19 @@ export default function FetchData() {
   if (isError) {
     return <div>Error occurred while fetching data</div>;
   }
-
+  const { avatar_url, name, company, bio } = user;
   return (
     <div>
+      <img
+        style={{ width: '100px', borderRadius: '25px' }}
+        src={avatar_url}
+        alt={name}
+      ></img>
       {user && (
         <div>
-          <h1>{user.name}</h1>
-          <p>{user.bio}</p>
+          <h1>{name}</h1>
+          <h4>works at {company}</h4>
+          <p>{bio}</p>
         </div>
       )}
     </div>
