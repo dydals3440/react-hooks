@@ -1,9 +1,9 @@
-import useFetchPerson from './useFetchPerson';
+import useFetch from './useFetch';
 
 const url = 'https://api.github.com/users/QuincyLarson';
 
 export default function FetchData() {
-  const { isLoading, isError, user } = useFetchPerson(url);
+  const { isLoading, isError, data: user } = useFetch(url);
 
   if (isLoading) {
     return <div>Loading...</div>;
