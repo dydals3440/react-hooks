@@ -1,10 +1,10 @@
 import './App.css';
-import FetchData from './tutorial/challenge/FetchData';
+import Navbar from './tutorial/07-context-api/starter/Navbar';
 
 function App() {
   return (
     <>
-      <FetchData />
+      <Navbar />
     </>
   );
 }
