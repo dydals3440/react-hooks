@@ -1,4 +1,9 @@
-export default function UserContainer({ user, logout }) {
+import { useContext } from 'react';
+import { NavbarContext } from './Navbar';
+
+export default function UserContainer() {
+  const { user, logout } = useContext(NavbarContext);
+
   return (
     <div className='user-container'>
       {user ? (
