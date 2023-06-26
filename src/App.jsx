@@ -1,10 +1,10 @@
 import './App.css';
-import Navbar from './tutorial/07-context-api/starter/Navbar';
+import UseReducer from './tutorial/08-useReducer/01-useReducer';
 
 function App() {
   return (
     <>
-      <Navbar />
+      <UseReducer />
     </>
   );
 }
