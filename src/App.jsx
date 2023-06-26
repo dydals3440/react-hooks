@@ -1,10 +1,10 @@
 import './App.css';
-import UseReducer from './tutorial/08-useReducer/01-useReducer';
+import UseCallback from './tutorial/11-useCallback/UseCallback';
 
 function App() {
   return (
     <>
-      <UseReducer />
+      <UseCallback />
     </>
   );
 }
